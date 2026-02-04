@@ -1,0 +1,106 @@
+body {
+    background-color: #a8d8f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+section {
+    margin-bottom: 1.5em;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0.8em 0;
+}
+
+#paragraph2 {
+    width: 90%;
+    margin: 1.5em 0;
+    padding: 1em;
+    border: 3px solid #28a745;
+    line-height: 1.8;
+    background-color: #f0f0f0;
+}
+
+p.blue {
+    background-color: #003d99;
+    color: white;
+    padding: 1em;
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 2em;
+}
+
+ol li {
+    margin: 0.3em 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0066cc;
+}
+
+section a[href*="w3schools"] {
+    color: #cc0000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    background-color: white;
+}
+
+table tr {
+    border: 1px solid #333;
+}
+
+table th {
+    background-color: #d0d0d0;
+    padding: 0.8em;
+    text-align: left;
+    border: 1px solid #333;
+    font-weight: bold;
+}
+
+table td {
+    padding: 0.8em;
+    border: 1px solid #333;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
