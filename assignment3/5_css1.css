@@ -65,10 +65,6 @@ a {
     text-decoration: underline;
 }
 
-a:visited {
-    color: #0066cc;
-}
-
 section a[href*="w3schools"] {
     color: #cc0000;
 }
