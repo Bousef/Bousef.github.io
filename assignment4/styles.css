@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+#jumpMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    background-color: #d4af37;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;
+    flex-shrink: 0;
+}   
+
+#jumpMenu a {
+    display: block;
+    margin: 1em 0;
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 15%;
+    width: calc(100% - 15%);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    right: 0;
+    background-color: #ff0000;
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+header p {
+    font-size: 2em;
+    color: #090909;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #000;
+    padding: 10px;
+}
+
+header nav button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+main > h1 {
+    margin-top: 180px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    padding: 0 20px;
+}
+
+#container {
+    column-count: 4;
+    column-gap: 20px;
+    padding: 20px;
+    margin-bottom: 150px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+article h2 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+article p {
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+
+#thanks {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #87ceeb;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+}
+
+footer {
+    background-color: #ff0000;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
