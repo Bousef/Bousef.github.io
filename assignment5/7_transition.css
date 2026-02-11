@@ -34,7 +34,6 @@ nav {
     background-color: #0000cc;
 }
 
-/* Jump Menu - Hidden by default */
 #jumpMenu {
     display: none;
     list-style: none;
@@ -89,7 +88,6 @@ h1 {
     font-size: 36px;
 }
 
-/* Article Container */
 #container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -97,7 +95,6 @@ h1 {
     padding: 20px;
 }
 
-/* Articles */
 article {
     background-color: white;
     padding: 15px;
