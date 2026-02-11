@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    background-color: black;
+    height: 100vh;
+}
+
+#menuItems button {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#menuItems button:hover {
+    background-color: #0000cc;
+}
+
+/* Jump Menu - Hidden by default */
+#jumpMenu {
+    display: none;
+    list-style: none;
+    background-color: #cba140;
+}
+
+#jumpMenu li {
+    background-color: #cba140;
+}
+
+#jumpMenu a {
+    display: block;
+    padding: 10px 15px;
+    color: blue;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#jumpMenu a:hover {
+    background-color: blue;
+    color: white;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+#recentArticles:hover {
+    background-color: #cba140;
+    color: black;
+}
+
+main {
+    margin-left: 280px;
+}
+
+header {
+    background-color: #dc3232;
+    padding: 50px;
+    text-align: center;
+}
+
+header p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 36px;
+}
+
+/* Article Container */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Articles */
+article {
+    background-color: white;
+    padding: 15px;
+    color: #aaa;
+    transition: color 2s, transform 2s;
+}
+
+article:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+article h2 {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+article:hover h2 {
+    color: black;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+article p:first-of-type::first-letter {
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+}
+
+article p:last-of-type a::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    background-image: url("square.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+#thanks {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightblue;
+    padding: 15px 30px;
+    border: 2px solid blue;
+}
+
+#thanks a {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+address span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+address a {
+    color: lightblue;
+}
