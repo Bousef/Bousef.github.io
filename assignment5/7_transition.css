@@ -22,7 +22,6 @@ nav {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 #menuItems button:hover {
@@ -121,12 +120,10 @@ article p {
 }
 
 article p:first-of-type::first-letter {
-    font-family: 'Times New Roman', serif;
     font-size: 36px;
 }
 
 article p:last-of-type a::after {
-    content: '';
     display: inline-block;
     width: 16px;
     height: 16px;
