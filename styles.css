@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.phone {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.projects-link {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.projects-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #667eea;
+  display: inline-block;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  background: #f0f4ff;
+  transform: translateX(4px);
+}
+
+.skill-category h3 {
+  color: #667eea;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.skill-category p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.education-item {
+  padding: 1rem 0;
+}
+
+.institution {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.degree {
+  color: #667eea;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-item h3 {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.date {
+  color: #764ba2;
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-list {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.75rem;
+  color: #555;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.experience-list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.project-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.project-list li {
+  margin-bottom: 0.75rem;
+  color: #555;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.project-list li:before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: #764ba2;
+  font-size: 0.7rem;
+  top: 0.4rem;
+}
+
+.footer {
+  background-color: #2d3748;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .phone {
+    font-size: 0.95rem;
+  }
+
+  .main-content {
+    padding: 1rem 1rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1rem;
+  }
+
+  .skill-category p {
+    font-size: 0.85rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .date {
+    font-size: 0.85rem;
+  }
+
+  .experience-list,
+  .project-list {
+    padding-left: 1rem;
+  }
+
+  .experience-list li,
+  .project-list li {
+    padding-left: 0.75rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project-item h3 {
+    font-size: 1.05rem;
+  }
+
+  .footer {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-content {
+    padding: 3rem 2rem;
+    max-width: 1400px;
+  }
+
+  .section {
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .skill-category {
+    padding: 2rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-category p {
+    font-size: 1rem;
+  }
+
+  .experience-item {
+    margin-bottom: 2.5rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .experience-list li,
+  .project-list li {
+    font-size: 1rem;
+    margin-bottom: 0.85rem;
+    padding-left: 1.25rem;
+  }
+
+  .project-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  .phone {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1439px) {
+  .main-content {
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-item h3 {
+    font-size: 1.15rem;
+  }
+}
