@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+nav button:hover {
+    background-color: #777;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#showArea {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: none;
+    box-shadow: none;
+}
+
+#toggleButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#filterButton, #addButton {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#filterButton:hover, #addButton:hover {
+    background-color: #f0f0f0;
+}
+
+/* Form Styles */
+#newContent, #filterContent {
+    display: none;
+    margin-top: 20px;
+}
+
+#newContent.show, #filterContent.show {
+    display: block;
+}
+
+#newContent h2, #filterContent h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.formRow {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formRow label {
+    font-weight: bold;
+}
+
+.formRow input[type="text"],
+.formRow textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.formRow textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formRow input[type="radio"],
+.formRow input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.formRow label[for="opinionRadio"],
+.formRow label[for="recipeRadio"],
+.formRow label[for="lifeRadio"],
+.formRow label[for="opinionCheckbox"],
+.formRow label[for="recipeCheckbox"],
+.formRow label[for="updateCheckbox"] {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+#newContent button, #filterContent button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#newContent button:hover, #filterContent button:hover {
+    background-color: #45a049;
+}
+
+#filterContent label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Article Styles */
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-align: center;
+}
+
+#articleList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+article.hidden {
+    display: none;
+}
+
+article h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+article a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.marker {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+article.opinion .marker {
+    background-color: #ff0000;
+}
+
+article.recipe .marker {
+    background-color: #2196F3;
+}
+
+article.update .marker {
+    background-color: #ff9800;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer address div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
